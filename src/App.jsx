@@ -732,46 +732,52 @@ const Portfolio = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="relative py-32 px-6 z-10">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-20 text-center">
-            <div className="inline-flex items-center gap-3 mb-4">
-              <Cpu size={32} className="text-emerald-500" />
-              <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight">TECHNICAL ARSENAL</h2>
-            </div>
-            <div className="h-1 w-32 bg-gradient-to-r from-transparent via-emerald-500 to-transparent mx-auto" />
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-  {[
-    { name: 'Docker', category: 'Container' },
-    { name: 'Kubernetes', category: 'Orchestration' },
-    { name: 'AWS', category: 'Cloud' },
-    { name: 'Terraform', category: 'IaC' },
-    { name: 'PostgreSQL', category: 'Database' },
-    { name: 'MongoDB', category: 'Database' },
-    { name: 'React', category: 'Frontend' },
-    { name: 'Node.js', category: 'Backend' },
-    { name: 'Python', category: 'Language' },
-    { name: 'Grafana', category: 'Monitor' },
-    { name: 'RabbitMQ', category: 'Queue' },
-    { name: 'Git', category: 'VCS' }
-  ].map((tech, i) => (
-    <div key={i} className="relative group cursor-pointer">
-      <div className="absolute -inset-2 bg-emerald-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500" />
-      <div className="relative border-2 border-emerald-500/30 rounded-xl p-6 bg-black/90 backdrop-blur terminal-box group-hover:border-emerald-500/60 transition-all transform group-hover:scale-105">
-        <p className="text-white font-black text-lg mb-2 font-mono text-center">
-          {tech.name}
-        </p>
-        <p className="text-xs text-emerald-500/80 font-mono tracking-wider text-center">
-          {tech.category}
-        </p>
+<section id="skills" className="relative py-32 px-6 z-10">
+  <div className="max-w-6xl mx-auto">
+    <div className="mb-20 text-center">
+      <div className="inline-flex items-center gap-3 mb-4">
+        <Cpu size={32} className="text-emerald-500" />
+        <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight">
+          TECHNICAL ARSENAL
+        </h2>
       </div>
+      <div className="h-1 w-32 bg-gradient-to-r from-transparent via-emerald-500 to-transparent mx-auto" />
     </div>
-  ))}
-</div>
 
-      </section>
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      {[
+        { name: 'Docker', category: 'Container' },
+        { name: 'Kubernetes', category: 'Orchestration' },
+        { name: 'AWS', category: 'Cloud' },
+        { name: 'Terraform', category: 'IaC' },
+        { name: 'PostgreSQL', category: 'Database' },
+        { name: 'MongoDB', category: 'Database' },
+        { name: 'React', category: 'Frontend' },
+        { name: 'Node.js', category: 'Backend' },
+        { name: 'Python', category: 'Language' },
+        { name: 'Grafana', category: 'Monitoring' },
+        { name: 'RabbitMQ', category: 'Messaging' },
+        { name: 'Git', category: 'Version Control' }
+      ].map((tech) => (
+        <div
+          key={tech.name}
+          className="relative group cursor-pointer"
+        >
+          <div className="absolute -inset-2 bg-emerald-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500" />
+
+          <div className="relative border-2 border-emerald-500/30 rounded-xl p-6 bg-black/90 backdrop-blur terminal-box group-hover:border-emerald-500/60 transition-all transform group-hover:scale-105">
+            <p className="text-white font-black text-lg mb-2 font-mono text-center">
+              {tech.name}
+            </p>
+            <p className="text-xs text-emerald-500/80 font-mono tracking-wider text-center">
+              {tech.category}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Contact Section */}
       <section id="contact" className="relative py-32 px-6 z-10 bg-gradient-to-b from-black via-gray-950 to-black">
