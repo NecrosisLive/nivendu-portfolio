@@ -713,8 +713,8 @@ const Portfolio = () => {
               <div className="relative border-2 border-emerald-500/30 rounded-2xl p-10 bg-black/90 backdrop-blur terminal-box group-hover:border-emerald-500/60 transition-all h-full">
                 <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform">🎓</div>
                 <h3 className="text-2xl font-black text-white mb-4 font-mono">Bachelor's Degree</h3>
-                <p className="text-base text-gray-300 mb-3 font-medium">Computer Science & Engineering</p>
-                <p className="text-sm text-emerald-500 font-mono tracking-wider">University Name · Year</p>
+                <p className="text-base text-gray-300 mb-3 font-medium">Electronics and Communication Engineering</p>
+                <p className="text-sm text-emerald-500 font-mono tracking-wider">SJB INSTITUTE OF TECHNOLOGY -Benguluru KA · 2019</p>
               </div>
             </div>
 
@@ -743,31 +743,34 @@ const Portfolio = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { name: 'Docker', category: 'Container', icon: '🐳' },
-              { name: 'Kubernetes', category: 'Orchestration', icon: '☸️' },
-              { name: 'AWS', category: 'Cloud', icon: '☁️' },
-              { name: 'Terraform', category: 'IaC', icon: '🏗️' },
-              { name: 'PostgreSQL', category: 'Database', icon: '🐘' },
-              { name: 'MongoDB', category: 'Database', icon: '🍃' },
-              { name: 'React', category: 'Frontend', icon: '⚛️' },
-              { name: 'Node.js', category: 'Backend', icon: '🟢' },
-              { name: 'Python', category: 'Language', icon: '🐍' },
-              { name: 'Grafana', category: 'Monitor', icon: '📊' },
-              { name: 'RabbitMQ', category: 'Queue', icon: '🐰' },
-              { name: 'Git', category: 'VCS', icon: '📦' }
-            ].map((tech, i) => (
-              <div key={i} className="relative group cursor-pointer">
-                <div className="absolute -inset-2 bg-emerald-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500" />
-                <div className="relative border-2 border-emerald-500/30 rounded-xl p-6 bg-black/90 backdrop-blur terminal-box group-hover:border-emerald-500/60 transition-all transform group-hover:scale-105">
-                  <div className="text-3xl mb-3 transform group-hover:scale-110 transition-transform">{tech.icon}</div>
-                  <p className="text-white font-black text-lg mb-2 font-mono">{tech.name}</p>
-                  <p className="text-xs text-emerald-500/80 font-mono tracking-wider">{tech.category}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+  {[
+    { name: 'Docker', category: 'Container' },
+    { name: 'Kubernetes', category: 'Orchestration' },
+    { name: 'AWS', category: 'Cloud' },
+    { name: 'Terraform', category: 'IaC' },
+    { name: 'PostgreSQL', category: 'Database' },
+    { name: 'MongoDB', category: 'Database' },
+    { name: 'React', category: 'Frontend' },
+    { name: 'Node.js', category: 'Backend' },
+    { name: 'Python', category: 'Language' },
+    { name: 'Grafana', category: 'Monitor' },
+    { name: 'RabbitMQ', category: 'Queue' },
+    { name: 'Git', category: 'VCS' }
+  ].map((tech, i) => (
+    <div key={i} className="relative group cursor-pointer">
+      <div className="absolute -inset-2 bg-emerald-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500" />
+      <div className="relative border-2 border-emerald-500/30 rounded-xl p-6 bg-black/90 backdrop-blur terminal-box group-hover:border-emerald-500/60 transition-all transform group-hover:scale-105">
+        <p className="text-white font-black text-lg mb-2 font-mono text-center">
+          {tech.name}
+        </p>
+        <p className="text-xs text-emerald-500/80 font-mono tracking-wider text-center">
+          {tech.category}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+
       </section>
 
       {/* Contact Section */}
@@ -787,7 +790,7 @@ const Portfolio = () => {
               <div className="relative border-2 border-emerald-500/30 rounded-2xl p-10 bg-black/90 backdrop-blur terminal-box group-hover:border-emerald-500/60 transition-all">
                 <Mail size={48} className="text-emerald-500 mx-auto mb-6 group-hover:scale-110 transition-transform" />
                 <h3 className="text-xl font-black text-white mb-3 font-mono">EMAIL PROTOCOL</h3>
-                <p className="text-base text-emerald-500 font-mono">your.email@example.com</p>
+                <p className="text-base text-emerald-500 font-mono">nivendu.tripathy99@gmail.com</p>
               </div>
             </a>
 
@@ -795,7 +798,7 @@ const Portfolio = () => {
               <div className="absolute -inset-3 bg-emerald-500/20 blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-500" />
               <div className="relative border-2 border-emerald-500/30 rounded-2xl p-10 bg-black/90 backdrop-blur terminal-box group-hover:border-emerald-500/60 transition-all">
                 <Phone size={48} className="text-emerald-500 mx-auto mb-6 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-black text-white mb-3 font-mono">VOICE CHANNEL</h3>
+                <h3 className="text-xl font-black text-white mb-3 font-mono">VOICE </h3>
                 <p className="text-base text-emerald-500 font-mono">+91 XXXXX XXXXX</p>
               </div>
             </a>
@@ -830,10 +833,7 @@ const Portfolio = () => {
               </div>
               <div>
                 <p className="text-sm text-gray-400 font-mono">
-                  © 2024 Nivendu Tripathy
-                </p>
-                <p className="text-xs text-emerald-500/60 font-mono">
-                  Built with React · Tailwind CSS · Lucide Icons
+                  © 2024 All Rights Reserved Nivendu Tripathy
                 </p>
               </div>
             </div>
