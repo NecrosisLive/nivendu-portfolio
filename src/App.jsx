@@ -146,6 +146,8 @@ const Portfolio = () => {
     return () => cancelAnimationFrame(animationId);
   }, [loading]);
 
+  
+  
   // Main page background
   useEffect(() => {
     if (loading) return;
@@ -439,7 +441,7 @@ const Portfolio = () => {
               onClick={() => scrollToSection('home')}
               className="px-5 py-2.5 text-sm font-bold text-emerald-500 border-2 border-emerald-500/50 rounded-lg hover:bg-emerald-500/20 transition-all tracking-widest font-mono box-glow"
             >
-              HOME
+              DOWNLOD CV
             </button>
             <a href="https://linkedin.com/in/nivendu-tripathy" target="_blank" rel="noopener noreferrer" 
                className="text-emerald-500 hover:text-emerald-400 transition-all transform hover:scale-110">
@@ -807,7 +809,7 @@ const Portfolio = () => {
                 <Linkedin size={32} className="text-emerald-500 group-hover:scale-110 transition-transform" />
               </div>
             </a>
-            <a href="https://github.com/nivendutripathy" target="_blank" rel="noopener noreferrer" 
+            <a href="https://github.com/NecrosisLive" target="_blank" rel="noopener noreferrer" 
                className="relative group">
               <div className="absolute -inset-2 bg-emerald-500/30 blur-xl opacity-0 group-hover:opacity-100 transition-all" />
               <div className="relative p-6 border-2 border-emerald-500/30 rounded-xl hover:bg-emerald-500/20 transition-all box-glow">
