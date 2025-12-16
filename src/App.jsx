@@ -337,7 +337,8 @@ const CyberPortfolio = () => {
               { number: '50+', label: 'Systems Deployed', icon: Server, status: 'ACTIVE' },
               { number: '1M+', label: 'Transactions/Day', icon: Database, status: 'PROCESSING' }
             ].map((stat, i) => (
-              <div key={i} className="glass-panel glass-panel-hover rounded-xl sm:rounded-2xl p-4 sm:p-6 card-lift">
+              <div key={i} className="glass-panel mission-card rounded-xl sm:rounded-2xl p-4 sm:p-6">
+                <div className="mission-card-glow rounded-xl sm:rounded-2xl"></div>
                 <div className="flex items-center justify-between mb-3 sm:mb-4">
                   <stat.icon className="w-6 h-6 sm:w-8 sm:h-8 text-status-secure" />
                   <span className="text-[10px] sm:text-xs font-mono px-1.5 sm:px-2 py-0.5 sm:py-1 bg-status-success/10 text-status-success rounded">{stat.status}</span>
@@ -347,7 +348,8 @@ const CyberPortfolio = () => {
               </div>
             ))}
           </div>
-          <div className="glass-panel rounded-xl sm:rounded-2xl p-6 sm:p-8 reveal">
+          <div className="glass-panel mission-card rounded-xl sm:rounded-2xl p-6 sm:p-8 reveal">
+            <div className="mission-card-glow rounded-xl sm:rounded-2xl"></div>
             <div className="flex items-center gap-3 mb-6 pb-4 border-b border-cyber-border">
               <Terminal className="w-5 h-5 text-status-secure" />
               <span className="font-mono text-status-secure text-sm">operator_profile.json</span>
@@ -379,7 +381,8 @@ const CyberPortfolio = () => {
               <div className="absolute -left-2 sm:-left-2.5 top-0 w-4 h-4 sm:w-5 sm:h-5 bg-status-secure rounded-full shadow-cyber flex items-center justify-center">
                 <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-cyber-black rounded-full"></div>
               </div>
-              <div className="glass-panel glass-panel-hover rounded-xl sm:rounded-2xl p-5 sm:p-6">
+              <div className="glass-panel mission-card rounded-xl sm:rounded-2xl p-5 sm:p-6">
+                <div className="mission-card-glow rounded-xl sm:rounded-2xl"></div>
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4 mb-4">
                   <div>
                     <div className="flex items-center gap-2 mb-2">
@@ -405,7 +408,8 @@ const CyberPortfolio = () => {
               <div className="absolute -left-2 sm:-left-2.5 top-0 w-4 h-4 sm:w-5 sm:h-5 bg-cyber-light group-hover:bg-status-secure rounded-full transition-colors flex items-center justify-center">
                 <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-cyber-black rounded-full"></div>
               </div>
-              <div className="glass-panel glass-panel-hover rounded-xl sm:rounded-2xl p-5 sm:p-6">
+              <div className="glass-panel mission-card rounded-xl sm:rounded-2xl p-5 sm:p-6">
+                <div className="mission-card-glow rounded-xl sm:rounded-2xl"></div>
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4 mb-4">
                   <div>
                     <div className="flex items-center gap-2 mb-2">
@@ -429,7 +433,8 @@ const CyberPortfolio = () => {
               <div className="absolute -left-2 sm:-left-2.5 top-0 w-4 h-4 sm:w-5 sm:h-5 bg-cyber-light group-hover:bg-status-secure rounded-full transition-colors flex items-center justify-center">
                 <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-cyber-black rounded-full"></div>
               </div>
-              <div className="glass-panel glass-panel-hover rounded-xl sm:rounded-2xl p-5 sm:p-6">
+              <div className="glass-panel mission-card rounded-xl sm:rounded-2xl p-5 sm:p-6">
+                <div className="mission-card-glow rounded-xl sm:rounded-2xl"></div>
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4 mb-4">
                   <div>
                     <div className="flex items-center gap-2 mb-2">
@@ -456,7 +461,8 @@ const CyberPortfolio = () => {
               <GraduationCap className="w-5 h-5 sm:w-6 sm:h-6 text-status-secure" />
               <h3 className="text-lg sm:text-xl font-bold text-white">Training and Certification</h3>
             </div>
-            <div className="glass-panel glass-panel-hover rounded-xl sm:rounded-2xl p-5 sm:p-6">
+            <div className="glass-panel mission-card rounded-xl sm:rounded-2xl p-5 sm:p-6">
+              <div className="mission-card-glow rounded-xl sm:rounded-2xl"></div>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
                 <div>
                   <div className="flex items-center gap-2 mb-2">
@@ -483,7 +489,8 @@ const CyberPortfolio = () => {
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">Mission Deployments</h2>
           </div>
-          <div className="glass-panel glass-panel-hover rounded-xl sm:rounded-2xl p-5 sm:p-6">
+          <div className="glass-panel mission-card rounded-xl sm:rounded-2xl p-5 sm:p-6">
+            <div className="mission-card-glow rounded-xl sm:rounded-2xl"></div>
             <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4 mb-4">
               <div>
                 <div className="flex items-center gap-2 mb-2">
@@ -519,7 +526,7 @@ const CyberPortfolio = () => {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">Commendations</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
-            <div className="glass-panel glass-panel-hover rounded-xl sm:rounded-2xl p-5 sm:p-6 card-lift">
+            <div className="glass-panel commendation-card rounded-xl sm:rounded-2xl p-5 sm:p-6">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2.5 bg-alert-warning/10 rounded-lg">
                   <Award className="w-6 h-6 text-alert-warning" />
@@ -531,7 +538,7 @@ const CyberPortfolio = () => {
               <h3 className="text-lg font-bold text-white mb-2">Hackathon Winner</h3>
               <p className="text-text-secondary text-sm">Secured 2nd position in competitive hackathon event, demonstrating rapid prototyping and innovative problem-solving skills under time constraints.</p>
             </div>
-            <div className="glass-panel glass-panel-hover rounded-xl sm:rounded-2xl p-5 sm:p-6 card-lift">
+            <div className="glass-panel commendation-card rounded-xl sm:rounded-2xl p-5 sm:p-6">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2.5 bg-status-success/10 rounded-lg">
                   <Award className="w-6 h-6 text-status-success" />
@@ -560,7 +567,8 @@ const CyberPortfolio = () => {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {skills.map((skillGroup, i) => (
-              <div key={i} className="glass-panel glass-panel-hover rounded-xl sm:rounded-2xl p-5 sm:p-6 card-lift">
+              <div key={i} className="glass-panel mission-card rounded-xl sm:rounded-2xl p-5 sm:p-6">
+                <div className="mission-card-glow rounded-xl sm:rounded-2xl"></div>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
                     <div className="p-2 sm:p-2.5 bg-status-secure/10 rounded-lg">
@@ -655,15 +663,18 @@ const CyberPortfolio = () => {
                   </div>
                 </div>
               </a>
-              <a href="tel:+918789966362" className="block glass-panel glass-panel-hover rounded-xl sm:rounded-2xl p-5 sm:p-6 card-lift">
+              <div className="glass-panel glass-panel-hover rounded-xl sm:rounded-2xl p-5 sm:p-6 card-lift">
                 <div className="flex items-center gap-4">
                   <div className="p-3 sm:p-4 bg-status-active/10 rounded-xl"><Phone className="w-6 h-6 sm:w-8 sm:h-8 text-status-active" /></div>
                   <div>
                     <h3 className="text-base sm:text-lg font-bold text-white mb-1">Direct Line</h3>
-                    <p className="text-status-active font-mono text-sm sm:text-base">+91-8789966362</p>
+                    <p className="text-text-muted font-mono text-xs sm:text-sm flex items-center gap-2">
+                      <Lock className="w-3 h-3" />
+                      <span>Restricted for security reasons</span>
+                    </p>
                   </div>
                 </div>
-              </a>
+              </div>
               <div className="glass-panel rounded-xl sm:rounded-2xl p-5 sm:p-6">
                 <h3 className="text-base sm:text-lg font-bold text-white mb-4">Network Links</h3>
                 <div className="flex gap-3 sm:gap-4">

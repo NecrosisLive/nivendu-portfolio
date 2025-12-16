@@ -318,3 +318,99 @@ section {
 .connection-line {
   animation: connectionPulse 3s ease-in-out infinite;
 }
+
+/* Mission History Card Hover Effect */
+.mission-card {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mission-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.1) 0%, transparent 50%, rgba(59, 130, 246, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.mission-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: rgba(0, 240, 255, 0.5);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.6),
+    0 0 40px rgba(0, 240, 255, 0.15),
+    0 0 80px rgba(0, 240, 255, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  background: rgba(25, 25, 40, 0.8);
+}
+
+.mission-card:hover::before {
+  opacity: 1;
+}
+
+.mission-card:hover .mission-card-glow {
+  opacity: 1;
+}
+
+.mission-card-glow {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.3), transparent 40%, transparent 60%, rgba(59, 130, 246, 0.3));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(8px);
+}
+
+/* Commendation Card Hover Effect */
+.commendation-card {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.commendation-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.commendation-card:hover::before {
+  left: 100%;
+}
+
+.commendation-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(245, 158, 11, 0.12),
+    0 0 80px rgba(245, 158, 11, 0.06);
+  background: rgba(30, 25, 20, 0.8);
+}
+
+@media (max-width: 768px) {
+  .mission-card:hover,
+  .commendation-card:hover {
+    transform: none;
+  }
+
+  .mission-card:active,
+  .commendation-card:active {
+    transform: scale(0.98);
+    border-color: rgba(0, 240, 255, 0.4);
+  }
+}
